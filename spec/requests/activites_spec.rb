@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ActivitiesController, type: :request do
-  let!(:activity){create(:activity)}
+  let!(:activity){ create(:activity) }
   it 'gets all activites' do
     get '/activities'
     expect(response.status).to eq(200)
